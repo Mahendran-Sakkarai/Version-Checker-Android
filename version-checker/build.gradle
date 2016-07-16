@@ -1,5 +1,30 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'Version-Checker-Android'
+
+    publishedGroupId = 'com.yaiyaiyaa.android'
+    libraryName = 'Version Checker Android'
+    artifact = 'versionchecker'
+
+    libraryDescription = 'An Android library to check any latest version is available.'
+
+    siteUrl = 'https://github.com/Mahendran-Sakkarai/Version-Checker-Android'
+    gitUrl = 'https://github.com/Mahendran-Sakkarai/Version-Checker-Android'
+
+    libraryVersion = '0.2'
+    libraryVersionCode = '2'
+
+    developerId = 'Mahendran-Sakkarai'
+    developerName = 'Mahendran Sakkarai'
+    developerEmail = 'mahendranmails@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -7,8 +32,8 @@ android {
     defaultConfig {
         minSdkVersion 8
         targetSdkVersion 23
-        versionCode 1
-        versionName "0.1"
+        versionCode libraryVersionCode
+        versionName libraryVersion
     }
     buildTypes {
         release {
@@ -24,3 +49,6 @@ dependencies {
     compile 'com.android.volley:volley:1.0.0'
     compile 'com.google.code.gson:gson:2.6.2'
 }
+
+apply from: 'https://raw.githubusercontent.com/Mahendran-Sakkarai/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/Mahendran-Sakkarai/JCenter/master/bintrayv1.gradle'
