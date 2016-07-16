@@ -13,8 +13,8 @@ ext {
     siteUrl = 'https://github.com/Mahendran-Sakkarai/Version-Checker-Android'
     gitUrl = 'https://github.com/Mahendran-Sakkarai/Version-Checker-Android'
 
-    libraryVersion = '0.2'
-    libraryVersionCode = '2'
+    libraryVersion = '0.2.0'
+    libraryVersionCode = 2
 
     developerId = 'Mahendran-Sakkarai'
     developerName = 'Mahendran Sakkarai'
